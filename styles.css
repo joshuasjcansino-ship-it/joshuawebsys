@@ -1,1 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #ffffff;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    border-bottom: 1px solid #eeeeee;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+}
+
+
+.navbar-container {
+    max-width: 1140px;
+    height: 100%;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.nav-links a:hover {
+    color: #777;
+}
+
+.hero {
+    min-height: 100vh;
+
+    padding-top: 80px;
+
+    background: linear-gradient(
+        135deg,
+        #f7f7f7,
+        #ffffff
+    );
+
+    display: flex;
+    align-items: center;
+}
+
+
+.hero-container {
+    width: 100%;
+    max-width: 1140px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 40px 20px;
+}
+
+
+.hero-content {
+    width: 55%;
+}
+
+
+.small-title {
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-content h1 {
+    font-size: 78px;
+
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-text {
+    max-width: 600px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #555;
+
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+
+.button {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+
+.black-button {
+    background-color: #222;
+    color: white;
+}
+
+
+.black-button:hover {
+    background-color: #000;
+}
+
+
+
+.white-button {
+    background-color: white;
+
+    color: #222;
+
+    border: 1px solid #222;
+}
+
+
+.white-button:hover {
+    background-color: #222;
+    color: white;
+}
+
+.hero-image {
+    width: 45%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.hero-image img {
+    width: 100%;
+
+    max-width: 550px;
+
+    max-height: 430px;
+
+    object-fit: contain;
+
+    filter: drop-shadow(
+        0 20px 30px rgba(0, 0, 0, 0.12)
+    );
+}
